@@ -1,0 +1,168 @@
+/*EE3C22 000000 7F7B82 FFFFFF  306BAC*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;0,900;1,200;1,300;1,900&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size:100%;
+    font-family: 'Nunito', sans-serif;
+}
+
+header{
+    display:flex;
+    width:100%;
+    height:75px;
+    background: rgb(238,60,34);
+background: linear-gradient(169deg, rgba(238,60,34,1) 23%, rgba(0,0,0,1) 86%);
+    align-items: center;
+    color:white;
+}
+
+#logotipo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20px;
+    flex-grow: 1;
+    flex-basis:50%;
+    
+}
+
+#logotipo h1{
+    font-size: 32px;
+    font-style:oblique;
+    transition: all 300ms;
+  }
+
+#logotipo h1:hover{
+  font-size: 35px;
+  
+}
+
+
+
+#logotipo img{
+    width: 60px;
+    height: 60px;
+}
+
+#menu{
+   
+    flex-grow:1; 
+    flex-basis:50%;
+    height:100%;
+    
+    
+}
+
+#menu  ul{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height:100%;
+    align-items:center;
+    justify-content: space-evenly;
+    
+    
+    list-style: none;
+}
+
+
+#menu  ul li a{
+    
+    font-size: 20px;
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px black;
+  
+}
+
+#menu  ul li a:hover{
+    /*EE3C22 000000 7F7B82 FFFFFF  306BAC*/
+    font-size: 22.5px;
+    color:#306BAC;
+    font-weight: bold;
+   
+  
+}
+
+/**/
+#banner{
+    width: 75%;
+    height:150px;
+    margin:0 auto;
+    margin-top:25px;
+    border-radius: 10px;
+    background: url("https://www.killping.com/blog/wp-content/uploads/2015/11/csgo-banner-1024x191.png");
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner h2{
+   font-size: 39px;
+    color: rgb(145 ,16 ,2);
+    background-color: rgba(255,255,255,0.4);
+
+text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+}
+
+/**/
+.anuncios{
+    margin-top: 35px;
+    background-color: white;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.anuncios .anuncio{
+    margin:0px 10px;
+
+}
+
+.anuncio img{
+    height: 100%;
+    width: auto;
+}
+
+.anuncio img{
+    animation-name: animar;
+animation-duration: 15s;
+animation-iteration-count: infinite;
+  
+}
+
+
+
+@keyframes animar{
+0% {
+    filter: invert(0.7) sepia(1) hue-rotate(0deg) saturate(1000%);
+}
+to {
+    filter: invert(0.7) sepia(1) hue-rotate(360deg) saturate(2000%);
+}
+
+}
+
+
+
+.anuncio img:hover{
+animation: none;
+
+}
+
+/**/
