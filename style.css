@@ -1,6 +1,7 @@
 /*EE3C22 000000 7F7B82 FFFFFF  306BAC*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;0,900;1,200;1,300;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;0,900;1,200;1,300;1,900&family=Oswald:wght@200;300;400;600;700&display=swap');
 
 *{
     margin:0;
@@ -72,6 +73,9 @@ background: linear-gradient(169deg, rgba(238,60,34,1) 23%, rgba(0,0,0,1) 86%);
     list-style: none;
 }
 
+.icon{
+    font-size: 20px;
+}
 
 #menu  ul li a{
     
@@ -99,7 +103,7 @@ background: linear-gradient(169deg, rgba(238,60,34,1) 23%, rgba(0,0,0,1) 86%);
   width: 75%;
     height:100px;
     margin:0 auto;
-   /* margin-top:25px;*/
+   margin-bottom:15px;
    /* border-radius: 10px;*/
    border-radius: 10px;
     background: url("https://www.killping.com/blog/wp-content/uploads/2015/11/csgo-banner-1024x191.png");
@@ -176,3 +180,61 @@ animation: none;
     width:100%;
     height:500px;
 }
+
+/**/
+
+#equipos{
+    
+}
+
+#equipos ul{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    cursor: grab;
+    list-style: none;
+    
+}
+
+#equipos ul:hover{
+    cursor: grabbing;
+}
+
+#equipos ul li{
+    min-height: 487px;
+    min-width:353px;
+    position: relative;
+    transition-property: transform;
+    
+}
+
+#equipos ul:hover{
+    transition-duration: 0ms; 
+    transform: translate3d(0px, 0px, 0px);
+}
+
+
+#equipos ul li img{
+    
+    width:100%;
+    height:100%;
+    clip-path:polygon(15% 0,100% 0,85% 100%,0 100%);
+    object-fit: cover;
+    z-index: 100;
+    
+}
+
+#equipos ul li h3{
+    position: absolute;
+    z-index: 150;
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: uppercase;
+    top: 90%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
