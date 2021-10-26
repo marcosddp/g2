@@ -184,39 +184,50 @@ animation: none;
 /**/
 
 #equipos{
-    
+    margin-bottom: 300px;
 }
 
 #equipos ul{
     display: flex;
     flex-direction: row;
-    overflow: hidden;
+    overflow-x: scroll;
     flex-wrap: nowrap;
-    cursor: grab;
+    cursor: auto; 
     list-style: none;
-    
+    scroll-snap-type:x mandatory;
+    overflow-y: hidden;
 }
 
-#equipos ul:hover{
-    cursor: grabbing;
+/**/
+#equipos ul::-webkit-scrollbar {
+    width: 12px;
 }
+#equipos ul::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+/*EE3C22 000000 7F7B82 FFFFFF  306BAC*/
+#equipos ul::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(169deg, rgb(0, 153, 255) 23%, rgb(229, 255, 0) 86%);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+/**/
+
+
 
 #equipos ul li{
     min-height: 487px;
     min-width:353px;
     position: relative;
-    transition-property: transform;
+    scroll-snap-align:center;
     
-}
-
-#equipos ul:hover{
-    transition-duration: 0ms; 
-    transform: translate3d(0px, 0px, 0px);
 }
 
 
 #equipos ul li img{
-    
+ 
     width:100%;
     height:100%;
     clip-path:polygon(15% 0,100% 0,85% 100%,0 100%);
